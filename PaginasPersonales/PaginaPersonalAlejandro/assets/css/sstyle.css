@@ -1,0 +1,212 @@
+/* ====== ESTILOS GENERALES ====== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000814, #001d3d, #000814);
+    color: #e6faff;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/* ====== ENCABEZADO ====== */
+header {
+    background: linear-gradient(135deg, rgba(0, 234, 255, 0.3), rgba(0, 174, 255, 0.15));
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    color: #e6faff;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 2px solid rgba(0, 234, 255, 0.6);
+    box-shadow: 0px 8px 25px rgba(0, 234, 255, 0.4);
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00eaff, transparent);
+    box-shadow: 0 0 12px #00eaff, 0 0 24px #00eaff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.2em;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px #00eaff, 0 0 35px #00cfff;
+}
+
+header p {
+    margin-top: 15px;
+    font-size: 1.4em;
+    opacity: 0.95;
+}
+
+/* ====== SECCIONES ====== */
+section {
+    margin: 50px auto;
+    padding: 35px;
+    max-width: 950px;
+    background: rgba(5, 15, 25, 0.75);
+    border-radius: 25px;
+    box-shadow: 0px 8px 28px rgba(0, 234, 255, 0.25);
+    border: 1px solid rgba(0, 234, 255, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: relative;
+    overflow: hidden;
+}
+
+/* efecto luz decorativa en las secciones */
+section::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(0, 234, 255, 0.5), transparent 70%);
+    filter: blur(80px);
+    z-index: 0;
+}
+
+/* ====== TÍTULOS ====== */
+h2 {
+    color: #00eaff;
+    border-bottom: 2px solid rgba(0, 234, 255, 0.5);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px #00eaff, 0 0 30px #00cfff;
+    position: relative;
+    z-index: 1;
+}
+
+/* ====== TEXTO ====== */
+p {
+    line-height: 1.8;
+    font-size: 1.15em;
+    color: #dffaff;
+    position: relative;
+    z-index: 1;
+}
+
+/* ====== HOBBIES ====== */
+.habilidades ul {
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.habilidades li {
+    padding: 14px;
+    margin: 12px 0;
+    background: rgba(10, 20, 30, 0.85);
+    border-left: 6px solid #00eaff;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 10px rgba(0, 234, 255, 0.4),
+                0px 4px 12px rgba(0, 234, 255, 0.3);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.habilidades li:hover {
+    transform: translateX(6px);
+    box-shadow: 0px 6px 18px rgba(0, 234, 255, 0.6),
+                inset 0px 0px 14px rgba(0, 234, 255, 0.6);
+}
+
+/* ====== IMAGEN PERSONAL ====== */
+.imagen img {
+    display: block;
+    margin: 20px auto;
+    width: 260px;
+    border-radius: 50%;
+    border: 5px solid #00eaff;
+    box-shadow: 0px 0px 28px #00eaff, 0px 0px 55px #00cfff;
+    transition: transform 0.35s;
+}
+
+.imagen img:hover {
+    transform: scale(1.08) rotate(2deg);
+}
+
+/* ====== ENLACES ====== */
+a {
+    color: #00eaff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00cfff;
+}
+
+a:hover {
+    color: #80f7ff;
+    text-decoration: underline;
+}
+
+/* ====== PREGUNTAS PERSONALES ====== */
+.preguntas .tarjeta {
+    background: rgba(10, 20, 30, 0.9);
+    padding: 22px;
+    margin: 18px 0;
+    border-left: 6px solid #00eaff;
+    border-radius: 18px;
+    box-shadow: 0px 6px 20px rgba(0, 234, 255, 0.4);
+    transition: transform 0.25s, background 0.35s;
+    position: relative;
+}
+
+.preguntas .tarjeta:hover {
+    transform: translateY(-7px);
+    background: rgba(0, 40, 60, 0.95);
+}
+
+/* ====== GALERÍA DE ARTISTAS ====== */
+.galeria .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 28px;
+    margin-top: 25px;
+    z-index: 1;
+    position: relative;
+}
+
+.galeria .artista {
+    text-align: center;
+    background: rgba(15, 25, 35, 0.9);
+    padding: 20px;
+    border-radius: 22px;
+    box-shadow: 0px 6px 20px rgba(0, 234, 255, 0.35);
+    transition: transform 0.25s, background 0.35s;
+}
+
+.galeria .artista:hover {
+    transform: scale(1.1);
+    background: rgba(0, 40, 60, 0.95);
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 160px;
+    border-radius: 50%;
+    border: 4px solid #00eaff;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 25px #00eaff, 0px 0px 50px #00cfff;
+}
+
+/* ====== PIE DE PÁGINA ====== */
+footer {
+    background: rgba(0, 25, 40, 0.95);
+    color: #aaf6ff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    border-top: 2px solid rgba(0, 234, 255, 0.5);
+    box-shadow: 0px -6px 18px rgba(0, 234, 255, 0.35);
+    font-size: 1em;
+}
