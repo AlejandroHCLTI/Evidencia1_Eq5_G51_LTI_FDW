@@ -1,0 +1,221 @@
+body{
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: cornsilk;
+}
+
+.content{
+    background-color: beige;
+    margin: 10px;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 4px 10px #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #823714;
+    padding: 10px 0px 10px 15px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+}
+
+header > h1{
+    text-shadow: 1px 1px 2px #000;
+}
+
+nav{
+    background-color: #070301;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background-color: rgb(228, 136, 86);
+    color: #ffffff;
+}
+
+.carrusel{
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-productos{
+    display: flex;
+    width: max-content;
+    animation: scroll 25s linear infinite;
+}
+
+.img-productos img{
+    width: 50rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{ transform: translateX(-250rem);}
+}
+
+#menu{
+    width: 90%;
+    margin: 2em;
+    padding: 1.5rem 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    color: #732709;
+
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li{
+    margin-bottom: 1.6rem;
+    border-left: 4px solid #732709;
+    padding-left: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#menu ul li:hover {
+    background-color: #ffa481c6;
+}
+
+#menu ul li strong{
+    font-size: 1.15rem;
+    color: #823714;
+}
+
+#menu ul li small{
+    display: block;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: rgba(6, 77, 140, 0.793);
+    margin-top: 0.2rem;
+}
+
+#promociones{
+    background-color: aliceblue;
+    width: 100%;
+    margin: 1em;
+    padding: 1.5rem 2rem;
+}
+
+#promociones{
+    width: 90%;
+    margin: 2em;
+    padding: 1.5rem 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    color: #732709;
+
+}
+
+#promociones ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#promociones ul li{
+    margin-bottom: 1.6rem;
+    border-left: 4px solid #732709;
+    padding-left: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+#promociones ul li strong{
+    font-size: 1.15rem;
+    color: #823714;
+}
+
+#recomendacion{
+    background-color: aliceblue;
+    width: 100%;
+    margin: 1em;
+    padding: 1.5rem 2rem;
+}
+
+#recomendacion{
+    width: 90%;
+    margin: 2em;
+    padding: 1.5rem 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+
+}
+.contenedor3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nosotros {
+    background-color: aliceblue;
+    width: 50%;
+    margin: 1em;
+    padding: 1.5rem 2rem;
+}
+
+.nosotros{
+    width: 90%;
+    margin: 2em;
+    padding: 1.5rem 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+
+}
+
+
+.contacto {
+    background-color: aliceblue;
+    width: 50%;
+    margin: 1em;
+    padding: 1.5rem 2rem;
+}
+
+.contacto{
+    width: 90%;
+    margin: 2em;
+    padding: 1.5rem 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+
+}

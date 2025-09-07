@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Clima en San Nicolás de los Garza</h1>
+            <h2>Semana 02 al 07 de Septiembre del 2025</h2>
+            <h6>Responsable Actualización: Camila López</h6>
+        </header>
+        <!--las columnas de los días de las semanas-->
+        <section class="row text-center mt-5">
+            <div class="col border p-3">
+                <h5>Lunes 02</h5>
+                <i class="fa-solid fa-cloud" h1></i>
+                <p>Nublado</p>
+                <p>31° | 21°</p>
+                <hr>
+                <i class="fa-solid fa-smog"></i>
+                <p>13 - 20km/hr</p>
+            </div>
+            <div class="col border p-3 ">
+                <h5>Martes 3</h5>
+                <i class="fa-solid fa-cloud-bolt" h1></i>
+                <p>Lluvia con truenos</p>
+                <p>25° | 21°</p>
+                <hr>
+                <i class="fa-solid fa-wind"></i>
+                <p>13 - 29km/hr</p>
+            </div>
+            <div class="col border p-3">
+                <h5>Miércoles 4</h5>
+                <i class="fa-solid fa-cloud-bolt" h1></i>
+                <p>Lluvia con truenos</p>
+                <p>21° | 11°</p>
+                <hr>
+                <i class="fa-solid fa-cloud"></i>
+                <p>13 - 30km/hr</p>
+            </div>
+            <div class="col border p-3">
+                <h5>Jueves 5</h5>
+                <i class="fa-solid fa-wind" h1></i>
+                <p>Vientos fuertes</p>
+                <p>20° | 15°</p>
+                <hr>
+                <i class="fa-solid fa-cloud"></i>
+                <p>13 - 25km/hr</p>
+            </div>
+            <div class="col border p-3">
+                <h5>Viernes 6</h5>
+                <i class="fa-solid fa-tornado" h1></i>
+                <p>Tornado</p>
+                <p>28° | 21°</p>
+                <hr>
+                <i class="fa-solid fa-cloud"></i>
+                <p>08 - 10km/hr</p>
+            </div>
+            <div class="col border p-3">
+                <h5>Sábado 7</h5>
+                <i class="fa-solid fa-cloud-bolt" h1></i>
+                <p>Lluvia con truenos</p>
+                <p>25° | 20°</p>
+                <hr>
+                <i class="fa-solid fa-sun"></i>
+                <p>15 - 20km/hr</p>
+            </div>
+
+        </section>
+
+        <!--Detalles del clima-->
+        <section class="row mt-5">
+            <div class="col-6">
+                <h5>Pronostico próxima semana</h5>
+                <p>Pronostico del Tiempo (8-14 de Septiembre)</p>
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Máx</th>
+                            <th>Min</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8 de Septiembre</td>
+                            <td>28</td>
+                            <td>18</td>
+                            <td>Parcialmente nublado</td>
+                        </tr>
+                        <tr>
+                            <td>9 de Septiembre</td>
+                            <td>25</td>
+                            <td>12</td>
+                            <td>Posibles lluvias con truenos</td>
+                        </tr>
+                        <tr>
+                            <td>11 de Septiembre</td>
+                            <td>30</td>
+                            <td>18</td>
+                            <td>Posibles lluvias con truenos</td>
+                        </tr>
+                        <tr>
+                            <td>12 de Septiembre</td>
+                            <td>21</td>
+                            <td>15</td>
+                            <td>Vientos fuertes</td>
+                        </tr>
+                        <tr>
+                            <td>13 de Septiembre</td>
+                            <td>10</td>
+                            <td>18</td>
+                            <td>Tornado</td>
+                        </tr>
+                        <tr>
+                            <td>14 de Septiembre</td>
+                            <td>12</td>
+                            <td>20</td>
+                            <td>Neblina</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Salida y puesta del sol</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- Tarjeta Salida -->
+                            <div class="col-6">
+                                <div class="card text-center">
+                                    <div class="card-header">
+                                        <p>Salida</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-sun"></i>
+                                        <p>7:00am</p>
+                                        <p>Soleado</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta Puesta -->
+                            <div class="col-6">
+                                <div class="card text-center">
+                                    <div class="card-header">
+                                        <p>Puesta</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-moon"></i>
+                                        <p>7:00pm</p>
+                                        <p>Despejado</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="card m-0 p-0 " >
+                        <div class="card-header">
+                            <h5>Informacion UV</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>El valor de 11+ se utiliza para expresar un índice de 11 o superior. Cuando el Índice UV
+                                alcanza o supera el valor de 11 existe un riesgo importante de sufrir daños en la piel
+                                sin protección en un periodo de tiempo breve.</p>
+
+                        </div>
+                        <div class="card-header">
+                            <p>Infromacion sobre el caracter informativo</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </section>
+        <div class="row mt-2">
+            <div class="p-3 mb-2 bg-info text-primary">Plantilla elaborada con boostrap por Camila López Grupo 51</div>
+
+        </div>
+    </main>
+</body>
+
+</html>

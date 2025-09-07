@@ -1,0 +1,76 @@
+body{
+    font-family: "Share Tech", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #98559e;
+}
+
+
+
+.content{
+    background-color: #b26bc4;
+    margin: 10px;
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0 4px 10px #7159dd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #b11089;
+    padding: 10px 0px 10px 15px;
+    border-radius: 10px 10px 10px 10px;
+    color: #ffffff;
+}
+
+header > h1{
+    text-shadow: 1px 1px 2px #290541;
+}
+
+
+header > .num {
+    text-align: center;
+}
+
+#texto {
+    text-align:justify
+}
+
+.medio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+
+#descripcion > h1{
+    text-align: left;
+}
+
+
+#habilidad > h1{
+    text-align: left;
+}
+
+
+
+#idioma > h1{
+    text-align: left;
+}
+
+
+
+#laboral > h1{
+    text-align: left;
+}
+
+#actividades >h1{
+     text-align: left;
+}
