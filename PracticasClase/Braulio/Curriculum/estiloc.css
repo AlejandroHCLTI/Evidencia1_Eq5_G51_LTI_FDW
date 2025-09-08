@@ -1,0 +1,61 @@
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background: #FEF3E2;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+}
+
+.curriculum {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #FF9B00;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.contacto {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.contacto i {
+    margin-right: 10px;
+    color: #FFE100;
+}
+
+
+.seccion {
+    margin-top: 30px;
+}
+
+
+.seccion i {
+    margin-top: 30px;
+    color: #FFE100;
+}
+
+
+.seccion h2 {
+    color: #FFE100;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #FFE100;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style:circle;
+    padding-left: 5;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
